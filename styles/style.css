@@ -2,57 +2,148 @@ body{
     font-family: arial,sans-serif;
     background: #ffffff;
     color: #000000;
-    height: 97vh;
+    height: 100vh;
+    margin-left: 0px;
     
     
    
 }
-.grid{
+.grid-container {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto auto;
     grid-template-areas:
     "header"
     "body"
     "footer";
-    margin: 8px;
+    /* margin: 8px; */
     height: 100%;
-    
 }
 
-header{
+.grid-items{
+
+}
+
+.grid-item-1{
     grid-area: "header";
+    padding-right: 10px;
 }
 
-main{
+
+.grid-item-2{
     grid-area: "body";
     justify-self: center;
-    align-self: center;
+    align-self: flex-start;
+    position: relative;
+    top: 17vh;
+    
     
 }
 
-footer{
+.grid-item-3{
     grid-area: "footer";
     
-    margin: auto;
+    
 }
 
 .me{
-    width: 32px;
-    height: 32px;
-    background-image: url(../images/me.jpg);
-    background-size: 32px 32px;
+    width: 33px;
+    height: 33px;
+    padding: 7px;
+    border-radius: 50%;
 }
-.hed{
+.head-links{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: baseline;
+    align-items: center;
 }
+ .head-links #gmail{
+     padding: 0px 7px 5px 7px;
+ }
+
+ .head-links #images{
+     padding: 0px 5px 5px 7px;
+ }
+
+ .head-links #box{
+     padding: 5px;
+     width: 30px;
+     height: 30px;
+ }
+
 #loupe{
-    height: 20px;
-    width: 20px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 7px;
+    left: 9px;
+    
+   
 }
 #voice{
-    height: 24px;
-    width: 24px;
+    transform: scale(0.60);
+    position: absolute;
+    right: 0px;
+    top: -5px;
+}
+
+.bottom-link-1{
+    display: inline;
+    position: relative;
+}
+
+.bottom-link-2{
+    display: inline;
+    padding-right: 15px;
+    position: absolute;
+    right: 0px;
+    
+
+
+    
+}
+
+.box-1{
+    border-top: 1px solid rgb(216, 216, 216);
+    border-bottom: 1px solid rgb(216, 216, 216);
+    padding: 10px;
+    background-color: hsla(360, 0%, 95%);
+}
+
+.box-2{
+    padding: 10px;
+    background-color: hsla(360, 0%, 95%);
+
+}
+
+.searching{
+    border: 1px solid rgb(216, 216, 216);
+    width: 40vw;
+    height: 40px;
+    position: relative;
+    border-radius: 50px;
+}
+
+input{
+    width: 83%;
+    margin-left: 13px;
+    border: none;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+input:focus{
+    outline-width: 0;
+}
+#goog{
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.languages{
+    text-align: center;
 }
