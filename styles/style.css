@@ -24,9 +24,7 @@ a:hover {
     height: 100%;
 }
 
-.grid-items{
 
-}
 
 .grid-item-1{
     grid-area: "header";
@@ -139,11 +137,16 @@ a:hover {
 }
 
 .searching{
-    border: 1px solid rgb(216, 216, 216);
+    border: 1px solid #dfe1e5;;
     width: 40vw;
     height: 40px;
     position: relative;
     border-radius: 50px;
+}
+
+.searching:hover{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color:rgba(223,225,229);
 }
 
 input{
@@ -191,6 +194,14 @@ input:focus{
     color: rgb(110, 110, 110);
 
 }
+.buttons button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
 
 .buttons .lucky{
     padding: 10px 15px 10px 15px;
@@ -202,6 +213,14 @@ input:focus{
     color: rgb(110, 110, 110);
    
 }
+
+/* .buttons .lucky button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+} */
 
 .languages .rus ,.kaz{
     margin: 5px;
